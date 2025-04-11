@@ -1,0 +1,479 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    src: url("../fonts/Montserrat-Regular.ttf");
+    font-family: "Montserrat";
+}
+
+@font-face {
+    src: url("../fonts/Montserrat-Bold.ttf");
+    font-family: "Montserrat Bold";
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3{
+    font-family: 'Montserrat Bold', sans-serif;
+}
+.container {
+    width: 90%;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main {
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+}
+
+.promo {
+    box-shadow: 0 7px 12px rgba(158, 158, 163, 0.1);
+    background: rgba(255, 230, 168, 0.75) url(../img/promo-img.png) no-repeat top -100px right -247px/924px;
+    border-radius: 10px;
+    padding: 68px 70px;
+    margin-bottom: 56px;
+    margin-top: -9vh;
+}
+
+.promo-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 46px;
+    color: #302C34;
+}
+
+.promo-text {
+    max-width: 538px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #302C34;
+}
+
+@media (max-width: 768px) {
+    .promo {
+        background-color: rgba(255, 230, 168, 0.75);
+        padding: 40px 20px;
+    }
+
+    .promo-title {
+        font-size: 28px;
+        line-height: 34px;
+        color: #000000;
+        background-color: rgba(255, 192, 203, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .promo-text {
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 100%;
+        color: #000000;
+        background-color: rgba(255, 192, 203, 0.5);
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-title {
+        font-size: 24px;
+    }
+    .promo-text {
+        font-size: 16px;
+    }
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.card-body {
+    flex-grow: 1;
+    padding: 1rem;
+}
+
+.card-heading {
+    margin-bottom: 1rem;
+}
+
+.card-info {
+    margin-top: auto;
+    padding: 0.5rem 0;
+}
+
+.card-title {
+    color: #f18e85;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-tag {
+    color: #8C8C8C;
+    text-align: right;
+   font-weight: bold;
+}
+
+.card-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 198, 22, 0.56);
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+}
+
+.card-img-wrapper:hover .card-hover-overlay {
+    opacity: 2;
+}
+
+.raiting-star {
+    color: rgba(255, 198, 22, 0.75);
+}
+
+.raiting {
+    margin-right: 26px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.price, .category {
+    color: #8C8C8C;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.phone-icon {
+    margin-right: 5px;
+    font-size: 18px;
+    color: #f18e85;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 578px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 280px) {
+    .container {
+        min-width: 280px;
+    }
+}
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .card-body {
+        padding: 0.5rem;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .raiting-star, .price {
+        font-size: 16px;
+    }
+}
+
+
+.cafe-section {
+    margin-top: -9vh;
+}
+
+.cafe-section-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.cafe-section-title {
+    font-size: 40px;
+    line-height: 42px;
+    color: #f18e85;
+}
+
+.cafe-section-text {
+    font-size: 22px;
+    line-height: 22px;
+    color: #f18e85;
+    margin-top: 5px;
+}
+
+.cafe-card-info {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    margin-top: -15px;
+    color: rgba(255, 198, 22, 0.75);
+}
+
+
+@media (max-width: 400px) {
+    .cafe-card-info {
+        font-size: 18px;
+    }
+}
+
+.cafe-card-info .cafe-rating {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.cafe-card-info .cafe-rating-star {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.cafe-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cafe-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+    width: calc(33.33% - 20px);
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px;
+}
+
+@media (max-width: 768px) {
+    .cafe-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .cafe-card {
+        width: calc(100% - 20px);
+    }
+}
+
+.cafe-card:hover {
+    transform: scale(1.05);
+}
+
+.cafe-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cafe-card-text {
+    padding: 10px;
+}
+
+.cafe-card-title {
+    color: #302C34;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.cafe-ingredients {
+    font-size: 14px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.cafe-card-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cafe-button {
+    background-color: rgb(241, 142, 133);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cafe-button:hover {
+    background-color: rgba(255, 198, 22, 0.75);
+}
+
+.cafe-card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f18e85;
+}
+
+.custom-header {
+    background-color: rgba(241, 142, 133, 0.72);
+    border-radius: 15px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav .nav-link:hover {
+    color: rgba(14, 11, 11, 0.5);
+}
+
+.navbar-expand-md {
+    justify-content: center;
+}
+
+#footer {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#footer .navbar-nav .nav-link {
+    color: black;
+}
+
+#footer .navbar-nav .nav-link:hover {
+    color: gray;
+}
+.navbar-brand-img {
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand-img:hover {
+    transform: scale(1.1);
+}
+
+.new-button {
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+    background-color: rgb(241, 142, 133);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.new-button:hover {
+    background-color: rgba(255, 198, 22, 0.75);
+    transform: scale(1.05);
+}
+
+.dropdown-menu {
+    --bs-dropdown-link-active-bg: rgba(241, 142, 133, 0.72);
+}
+
+.cart-icon {
+    transition: transform 0.3s ease;
+}
+
+.cart-icon:hover {
+    transform: scale(1.2);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --bs-pagination-hover-color:  rgb(241, 142, 133);
+    --bs-pagination-focus-color: rgb(241, 142, 133);
+}
+
+.page-item {
+    margin: 0 1px;
+}
+
+.custom-page-link {
+    display: inline-block;
+    color: white;
+    background-color: rgb(241, 142, 133);
+    transition: background-color 0.3s;
+    text-align: center;
+    border-radius: 3px;
+    height: 35px;
+}
+
+.custom-page-link:hover {
+    background-color: rgba(255, 198, 22, 0.75);
+}
+
+.custom-page-link:focus {
+    outline: none;
+}
+
+.page-item.active .custom-page-link {
+    background-color: rgba(255, 198, 22, 0.75);
+    border: none;
+    color: black;
+}
+
+.custom-page-link.disabled {
+    color: #ffffff;
+    background-color: rgb(241, 142, 133);
+    cursor: pointer;
+}
+
+.cafe-raiting, .cafe-price, .cafe-category{
+    font-weight: bold;
+}
